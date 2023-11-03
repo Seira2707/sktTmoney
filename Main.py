@@ -1,6 +1,5 @@
 import requests
 
-
 def get_ticker_price(market):
     url = f"https://api.upbit.com/v1/ticker?markets={market}"
     headers = {"accept": "application/json"}
