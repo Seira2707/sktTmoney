@@ -17,8 +17,8 @@ struct coins
     int qtum;
 } coins;
 
-void sijang()
-{
+void sijang(){
+    
 }
 
 void jasan()
@@ -44,16 +44,20 @@ int main()
         printf("시작 seed 머니 입력(최대 1억): ");
         scanf("%d", &playerInfo.seed);
     }
+    for(int i=0;i>1;i--){
+        printf("\n \n \n \n \n \n \n \n \n \n");
+        printf("작업 선택\n시장 보기 : 1  자산 보기 : 2  3 : 종료\n");
+        scanf("%d", &select);
 
-    printf("\n \n \n \n \n \n \n \n \n \n");
-    printf("작업 선택\n시장 보기 : 1  자산 보기 : 2\n");
-    scanf("%d", &select);
-    if (select == 1)
-    {
-        sijang();
+        if (select == 1){
+            sijang();
+        }
+        else if (select == 2){
+            jasan();
+        }
+        else if (select == 3){
+            break;
+        }
     }
-    else if (select == 2)
-    {
-        jasan();
-    }
+    
 }
